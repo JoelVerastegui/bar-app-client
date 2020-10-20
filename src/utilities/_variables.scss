@@ -1,0 +1,33 @@
+/* ===== DIMESIONS ===== */
+$laptopL-width: 82.875rem;
+$before-laptopL-width: $laptopL-width - 0.0625rem;
+
+$laptop-width: 64rem;
+$before-laptop-width: $laptop-width - 0.0625rem;
+
+$tablet-width: 48rem;
+$before-tablet-width: $tablet-width - 0.0625rem;
+
+$mobileL-width: 26.5625rem;
+/* ===================== */
+
+
+/* ===== COLORS ===== */
+$base-color: #1e1e1e;
+$base-light: #fff;
+
+$primary-dark: #1b1b1b;
+$secondary-dark: #151515;
+
+$primary-light: #353535;
+$secondary-light: #787878;
+
+:export {
+    baseColor: $base-color;
+    baseLight: $base-light;
+    primaryDark: $primary-dark;
+    secondaryDark: $secondary-dark;
+    primaryLight: $primary-light;
+    secondaryLight: $secondary-light;
+}
+/* ================== */

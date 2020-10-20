@@ -1,0 +1,34 @@
+@import '../../utilities/variables';
+
+.container {
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background-color: $secondary-dark;
+    transition: clip-path 0.5s;
+
+    @media (max-width:  $mobileL-width) {
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .toggleButton {
+            width: 100%;
+            height: 4.375rem;
+            box-sizing: border-box;
+            padding: 15px 0 0 20px;
+            background-color: $base-color;
+
+            & > div {
+                width: 2.5rem;
+                height: 2.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

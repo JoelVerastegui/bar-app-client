@@ -1,0 +1,65 @@
+@import '../../utilities/variables';
+
+.confirmModal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modalContainer {
+        width: 18.75rem;
+        border-radius: 0.625rem;
+        background-color: $base-color;
+        color: $base-light;
+        overflow: hidden;
+
+        & > h3 {
+            color: $base-light;
+            text-align: center;
+            background-color: $secondary-dark;
+            padding: 0.625rem;
+        }
+
+        .modalContent {
+            width:100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1.25rem;
+            box-sizing: border-box;
+
+            .modalOptions {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 1.25rem;
+
+                & > button {
+                    color: $base-light;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                }
+
+                .modalConfirm {
+                    width: 100px;
+                    background-color: $secondary-dark;
+                    border-radius: 0.625rem;
+                    text-align: center;
+                }
+
+                .modalCancel {
+                    width: 6.25rem;
+                    border: 2px $primary-light solid;
+                    border-radius: 0.625rem;
+                    text-align: center;
+                    background-color: transparent;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}

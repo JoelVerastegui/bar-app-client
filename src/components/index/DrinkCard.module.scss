@@ -1,0 +1,53 @@
+@import '../../utilities/variables';
+
+.container {
+    max-width: 18.125rem;
+    min-width: 18.125rem;
+
+    .content {
+        background-color: $base-light;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        display: grid;
+        grid-template-rows: 40vmin auto;
+
+        & > * {
+            justify-self: center;
+            align-self: center;
+        }
+
+        &:hover {
+            filter: brightness(0.9);
+            cursor: pointer;
+        }
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+
+        .description {
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            * {
+                font-size: 3vmin;
+            }
+
+            h5 {
+                color: $primary-light;
+            }
+
+            h6 {
+                color: $secondary-light;
+                margin: 0;
+            }
+        }
+    }
+}

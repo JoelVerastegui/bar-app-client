@@ -1,0 +1,42 @@
+@import '../../utilities/variables';
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .content {
+        max-width: $laptopL-width;
+        margin: 3rem;
+
+        @media (max-width:  $mobileL-width) {
+            margin: 0.625rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 1.25rem;
+            row-gap: 1.25rem;
+        
+            @media (min-width: $laptop-width) and (max-width: $before-laptopL-width) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media (min-width: $tablet-width) and (max-width: $before-laptop-width) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: $before-tablet-width) { // mobileL
+                grid-template-columns: repeat(1, 1fr);
+            }
+        
+            a {
+                text-decoration: none;
+            }
+
+            div {
+                height: 100%;
+                place-self: center;
+            }
+        }
+    }
+}

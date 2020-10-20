@@ -1,0 +1,14 @@
+@import '../../utilities/variables';
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+    font-size: 0.9375rem;
+    color: $primary-light;
+
+    .label {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

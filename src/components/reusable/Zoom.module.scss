@@ -1,0 +1,20 @@
+@import '../../utilities/variables';
+
+.zoom {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    img {
+        transition: opacity .5s;
+        display: block;
+        height: 100%;
+        background-color: $base-light;
+    }
+
+    & img:hover {
+        opacity: 0;
+    }
+}
